@@ -1,3 +1,8 @@
 # ToDo
 
-This is a website that sends tasks to the server, shows you all tasks on the server, and allows you to delete tasks from the server.
+This is an online to-do list!
+
+# Features:
+- sends tasks to the server
+- shows all tasks on the server
+- deletes tasks from the server
