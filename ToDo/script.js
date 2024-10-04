@@ -17,7 +17,7 @@ function handleTaskSubmission(event) {
 }
 
 function addTaskToBackend(task) {
-  fetch("http://localhost:3000/tasks", {
+  fetch("https://todo-ka32.onrender.com/tasks", {
     method: "POST",
     headers: {
       "Content-Type" : "application/json"
@@ -49,7 +49,7 @@ function addTaskToList(task) {
 }
 
 function deleteTaskFromBackend(taskID, taskElement) {
-  fetch(`http://localhost:3000/tasks/${taskID}`, {
+  fetch(`https://todo-ka32.onrender.com/tasks/${taskID}`, {
     method: "DELETE"
   })
   .then(() => {
@@ -66,7 +66,7 @@ document
 window.addEventListener("DOMContentLoaded", fetchTasks);
 
 function fetchTasks() {
-    fetch("http://localhost:3000/tasks") // Send a GET request to the server
+    fetch("https://todo-ka32.onrender.com/tasks") // Send a GET request to the server
     .then((response) => response.json()) // Convert the response to JSON
     .then((tasks) => {
         const taskList = document.getElementById("taskList");
